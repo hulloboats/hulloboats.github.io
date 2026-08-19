@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hulloboats — Coming Soon</title>
+<meta name="description" content="Hulloboats is a peer-to-peer marketplace for buying and selling used boats. Honest, simple, and built on trust. Launching soon.">
+<style>
+  :root {
+    --navy: #0b2d48;
+    --deep: #06192a;
+    --teal: #1f7a8c;
+    --foam: #f4f8f9;
+    --gold: #d9a441;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(180deg, var(--deep) 0%, var(--navy) 55%, #103c5e 100%);
+    color: var(--foam);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    text-align: center;
+    padding: 24px;
+  }
+  .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    opacity: 0.5;
+  }
+  .waves svg { width: 100%; height: auto; display: block; }
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge {
+    display: inline-block;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+    border: 1px solid rgba(217, 164, 65, 0.5);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  h1 .dot { color: var(--gold); }
+  .tagline {
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    color: rgba(244, 248, 249, 0.85);
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+  p.blurb {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(244, 248, 249, 0.75);
+    max-width: 520px;
+    margin-bottom: 8px;
+  }
+  .location {
+    font-size: 0.9rem;
+    color: rgba(244, 248, 249, 0.55);
+    margin-top: 18px;
+  }
+  footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: rgba(244, 248, 249, 0.45);
+  }
+  .boat-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <svg class="boat-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 40 L56 40 L50 54 L14 54 Z" fill="#f4f8f9" opacity="0.9"/>
+      <rect x="30" y="10" width="3" height="30" fill="#d9a441"/>
+      <path d="M33 12 L48 34 L33 34 Z" fill="#1f7a8c"/>
+      <path d="M30 16 L20 34 L30 34 Z" fill="#f4f8f9" opacity="0.85"/>
+    </svg>
 
+    <span class="badge">Coming Soon</span>
+    <h1>Hulloboats<span class="dot">.</span></h1>
+    <p class="tagline">The boat marketplace, built on trust.</p>
+    <p class="blurb">
+      Hulloboats is a peer-to-peer marketplace for buying and selling used boats —
+      built to be honest, simple, and free of the clutter and scams that make the
+      rest of the market a hassle. Fewer ads. More boats. Real people on both ends
+      of the deal.
+    </p>
+  </div>
+
+  <div class="waves">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,32 1440,64 L1440,120 L0,120 Z" fill="#1f7a8c"/>
+    </svg>
+  </div>
+
+  <footer>&copy; 2026 Hulloboats. All rights reserved.</footer>
+</body>
+</html>
